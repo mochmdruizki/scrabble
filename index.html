@@ -5,10 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Scrabble</title>
+
+  <link rel="stylesheet" href="lib/css/styles.css">
 </head>
 <body>
   <div id="board"></div>
+  <div id="turnInfo">Turn player A</div>
+  <div>
+    <div id="reservedLetters">
+      <button letterName="A" letterPoint="1">A <sup>1</sup></button>
+      <button letterName="I" letterPoint="1">I <sup>1</sup></button>
+      <button letterName="U" letterPoint="1">U <sup>1</sup></button>
+      <button letterName="E" letterPoint="1">E <sup>1</sup></button>
+      <button letterName="O" letterPoint="1">O <sup>1</sup></button>
+    </div>
+    <button id="submit">Ok</button>
+  </div>
 
+  <!-- JS call -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.3/rxjs.umd.min.js"></script>
+  <!-- <script src="rxjs.min.js"></script> -->
   <script src="lib/js/board-generator.js"></script>
+  <script src="lib/js/game-control.js"></script>
 </body>
 </html>
