@@ -1,0 +1,40 @@
+body{
+    /* margin: 0 auto; */
+    font-family: Arial;
+}
+.wrap{
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.main-board{
+    width: 60%;
+    padding: 0px 20px 20px 100px;
+    float: left;
+}
+
+.right-board{
+    
+}
+
+.words{
+    margin-right: 50px;
+}
+
+.word-list{
+    overflow:scroll;
+    height:200px;
+}
+.score{
+    
+}
+
+#player-board{
+    width: 100%;
+    float: left;
+}
+.player1{
+    float: left;
+    width: 50%
+}
