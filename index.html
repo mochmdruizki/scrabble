@@ -5,10 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Scrabble</title>
+  <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-  <div id="board"></div>
+  <div class="wrap">
+    <div class="main-board">
+      <div id="board"></div>
+    </div>
+    <div class="right-board">
+        <h1>SCRABBLE GAME</h1>
+        <div class="words">
+          <h2>WORDS</h2>
+          <div class="word-list">
 
-  <script src="lib/js/board-generator.js"></script>
+          </div>
+        </div>
+        <br>
+        <div class="score">
+          <h2>SCORE</h2>
+          <h4>Player 1 :</h4>
+          <h4>Player 2 :</h4>
+        </div>
+    </div>
+  </div>
+  <br>
+  <div id="player-board">
+    <div class="player1">
+      player 1
+      <table>
+        <tr>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+        </tr>
+      </table>
+    </div>
+    <div class="player2">
+      player 2
+      <table>
+        <tr>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+        </tr>
+      </table>
+    </div>
+  </div>
 </body>
+  <script src="lib/js/board-generator.js"></script>
 </html>
