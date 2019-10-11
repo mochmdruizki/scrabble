@@ -8,7 +8,20 @@
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-  <h1 style="text-align: center">SCRABBLE GAME</h1>
+  <h1 style="text-align: center">
+    S&nbsp;&nbsp;
+    c&nbsp;&nbsp;
+    r&nbsp;&nbsp;
+    a&nbsp;&nbsp; 
+    b&nbsp;&nbsp; 
+    b&nbsp;&nbsp; 
+    l&nbsp;&nbsp; 
+    e&nbsp;&nbsp;
+    <i class="fas fa-poo"></i>&nbsp;&nbsp;
+    G&nbsp;&nbsp; 
+    a&nbsp;&nbsp; 
+    m&nbsp;&nbsp; 
+    e</h1>
   <div class="wrap">
     <div class="main-board">
       <div id="board"></div>
@@ -17,6 +30,7 @@
     <div class="right-board">
       <div class="words">
         <div class="subtitle">
+            <i class="far fa-calendar-check"></i>&nbsp; 
             Word List
         </div>
         <div class="word-list">
@@ -39,7 +53,8 @@
       <br>
       <div class="score">
         <div class="subtitle">
-            Score
+          <i class="far fa-clipboard"></i>&nbsp; 
+          Score
         </div><hr>
         <div class="score-player">
           Player 1
@@ -61,7 +76,8 @@
             <img src="/asset/f.jpeg" draggable="true" ondragstart="drag(event)" id="drag6" width="23" height="23">
             <img src="/asset/g.jpeg" draggable="true" ondragstart="drag(event)" id="drag7" width="23" height="23">
             <img src="/asset/h.jpeg" draggable="true" ondragstart="drag(event)" id="drag8" width="23" height="23"> 
-            <button id="submit" style="float: right">Check Words</button>
+            <button id="clear"><i class="fas fa-trash"></i></button>
+            <button id="submit"><i class="fas fa-check"></i></button>
           </div>
         </div>
       </div>
@@ -73,5 +89,6 @@
   <script src="lib/js/board-generator.js"></script>
   <script src="lib/js/game-control.js"></script>
   <script src="lib/js/drag-drop.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
