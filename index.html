@@ -11,6 +11,7 @@
   <div class="wrap">
     <div class="main-board">
       <div id="board"></div>
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     </div>
     <div class="right-board">
         <h1>SCRABBLE GAME</h1>
@@ -33,6 +34,14 @@
     <div class="player1">
       <div id="turnInfo">Turn player A</div>
         <div id="reservedLetters">
+          <img src="/asset/a.jpeg" draggable="true" ondragstart="drag(event)" id="drag1" width="23" height="23">
+          <img src="/asset/b.jpeg" draggable="true" ondragstart="drag(event)" id="drag2" width="23" height="23">
+          <img src="/asset/c.jpeg" draggable="true" ondragstart="drag(event)" id="drag3" width="23" height="23">
+          <img src="/asset/d.jpeg" draggable="true" ondragstart="drag(event)" id="drag4" width="23" height="23">
+          <img src="/asset/e.jpeg" draggable="true" ondragstart="drag(event)" id="drag5" width="23" height="23">
+          <img src="/asset/f.jpeg" draggable="true" ondragstart="drag(event)" id="drag6" width="23" height="23">
+          <img src="/asset/g.jpeg" draggable="true" ondragstart="drag(event)" id="drag7" width="23" height="23">
+          <img src="/asset/h.jpeg" draggable="true" ondragstart="drag(event)" id="drag8" width="23" height="23">          <button id="submit">Ok</button>
         </div>
         <button id="submit">Ok</button>
       </div>
@@ -43,8 +52,8 @@
   <!-- JS call -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.3/rxjs.umd.min.js"></script>
   <!-- <script src="rxjs.min.js"></script> -->
-  <script src="lib/js/letters.js"></script>
   <script src="lib/js/board-generator.js"></script>
   <script src="lib/js/game-control.js"></script>
+  <script src="lib/js/drag-drop.js"></script>
 </body>
 </html>
