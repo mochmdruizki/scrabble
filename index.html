@@ -49,7 +49,15 @@
             <li>word3</li>
           </ul>
         </div>
-      </div>
+    </div>
+  </div>
+  <br>
+  <div id="player-board">
+    <!-- <div class="player1"> -->
+      <!-- <div id="turnInfo">Turn player A</div> -->
+        <!-- <div id="reservedLetters"></div> -->
+      <!-- </div>
+      <button id="submit" style="float: right">Check Words</button> -->
       <br>
       <div class="score">
         <div class="subtitle">
@@ -76,9 +84,9 @@
             <img src="/asset/f.jpeg" draggable="true" ondragstart="drag(event)" id="drag6" width="23" height="23">
             <img src="/asset/g.jpeg" draggable="true" ondragstart="drag(event)" id="drag7" width="23" height="23">
             <img src="/asset/h.jpeg" draggable="true" ondragstart="drag(event)" id="drag8" width="23" height="23"> 
-            <button id="clear"><i class="fas fa-trash"></i></button>
-            <button id="submit"><i class="fas fa-check"></i></button>
           </div>
+          <button id="clear"><i class="fas fa-trash"></i></button>
+            <button id="submit"><i class="fas fa-check"></i></button>
         </div>
       </div>
     </div>
@@ -86,9 +94,10 @@
   <!-- JS call -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.3/rxjs.umd.min.js"></script>
   <!-- <script src="rxjs.min.js"></script> -->
+  <script src="lib/js/letters.js"></script>
   <script src="lib/js/board-generator.js"></script>
-  <script src="lib/js/game-control.js"></script>
   <script src="lib/js/drag-drop.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="lib/js/game-control.js"></script>
 </body>
 </html>
