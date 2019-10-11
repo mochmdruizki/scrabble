@@ -32,7 +32,8 @@ body{
     background: #eee;
     color: #194010;
     padding: 5px;
-    border-radius: 10px
+    border-radius: 10px;
+    margin-top: 5px
 }
 .score-player{
     font-size: 15px;
@@ -53,5 +54,16 @@ body{
 
 #submit{
     margin-left: 20px;
-    background: #decd5d
+    background: #decd5d;
+    float: right;
+    width: 50px;
+    color: #194010;
+}
+
+#clear{
+    margin-left: 5px;
+    background: #decd5d;
+    float: right;
+    width: 50px;
+    color: #194010;
 }
