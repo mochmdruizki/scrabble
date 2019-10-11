@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Scrabble</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <h1 style="text-align: center">
+    S&nbsp;&nbsp;
+    c&nbsp;&nbsp;
+    r&nbsp;&nbsp;
+    a&nbsp;&nbsp; 
+    b&nbsp;&nbsp; 
+    b&nbsp;&nbsp; 
+    l&nbsp;&nbsp; 
+    e&nbsp;&nbsp;
+    <i class="fas fa-poo"></i>&nbsp;&nbsp;
+    G&nbsp;&nbsp; 
+    a&nbsp;&nbsp; 
+    m&nbsp;&nbsp; 
+    e</h1>
+  <div class="wrap">
+    <div class="main-board">
+      <div id="board"></div>
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <div class="right-board">
+      <div class="words">
+        <div class="subtitle">
+            <i class="far fa-calendar-check"></i>&nbsp; 
+            Word List
+        </div>
+        <div class="word-list">
+          <ul>
+            <li>word1</li>
+            <li>word2</li>
+            <li>word3</li>
+            <li>word1</li>
+            <li>word2</li>
+            <li>word3</li>
+            <li>word1</li>
+            <li>word2</li>
+            <li>word3</li>
+            <li>word1</li>
+            <li>word2</li>
+            <li>word3</li>
+          </ul>
+        </div>
+    </div>
+  </div>
+  <br>
+  <div id="player-board">
+    <!-- <div class="player1"> -->
+      <!-- <div id="turnInfo">Turn player A</div> -->
+        <!-- <div id="reservedLetters"></div> -->
+      <!-- </div>
+      <button id="submit" style="float: right">Check Words</button> -->
+      <br>
+      <div class="score">
+        <div class="subtitle">
+          <i class="far fa-clipboard"></i>&nbsp; 
+          Score
+        </div><hr>
+        <div class="score-player">
+          Player 1
+        </div>
+        <div class="score-player">
+          Player 2
+        </div>
+      </div>
+      <hr>
+      <div class="player">
+        <div id="turnInfo">Turn player A</div>
+        <br>
+          <div id="reservedLetters">
+            <img src="/asset/a.jpeg" draggable="true" ondragstart="drag(event)" id="drag1" width="23" height="23">
+            <img src="/asset/b.jpeg" draggable="true" ondragstart="drag(event)" id="drag2" width="23" height="23">
+            <img src="/asset/c.jpeg" draggable="true" ondragstart="drag(event)" id="drag3" width="23" height="23">
+            <img src="/asset/d.jpeg" draggable="true" ondragstart="drag(event)" id="drag4" width="23" height="23">
+            <img src="/asset/e.jpeg" draggable="true" ondragstart="drag(event)" id="drag5" width="23" height="23">
+            <img src="/asset/f.jpeg" draggable="true" ondragstart="drag(event)" id="drag6" width="23" height="23">
+            <img src="/asset/g.jpeg" draggable="true" ondragstart="drag(event)" id="drag7" width="23" height="23">
+            <img src="/asset/h.jpeg" draggable="true" ondragstart="drag(event)" id="drag8" width="23" height="23"> 
+          </div>
+          <button id="clear"><i class="fas fa-trash"></i></button>
+            <button id="submit"><i class="fas fa-check"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- JS call -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.3/rxjs.umd.min.js"></script>
+  <!-- <script src="rxjs.min.js"></script> -->
+  <script src="lib/js/letters.js"></script>
+  <script src="lib/js/board-generator.js"></script>
+  <script src="lib/js/drag-drop.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="lib/js/game-control.js"></script>
+</body>
+</html>
