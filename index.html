@@ -41,9 +41,9 @@
   <div id="player-board">
     <div class="player1">
       <div id="turnInfo">Turn player A</div>
-        <div id="reservedLetters">
+        <div id="reservedLetters"></div>
       </div>
-      <button id="submit">Ok</button>
+      <button id="submit" style="float: right">Check Words</button>
       <br>
       <div class="score">
         <div class="subtitle">
@@ -56,23 +56,6 @@
           Player 2
         </div>
       </div>
-      <hr>
-      <div class="player">
-        <div id="turnInfo">Turn player A</div>
-        <br>
-          <div id="reservedLetters">
-            <img src="/asset/a.jpeg" draggable="true" ondragstart="drag(event)" id="drag1" width="23" height="23">
-            <img src="/asset/b.jpeg" draggable="true" ondragstart="drag(event)" id="drag2" width="23" height="23">
-            <img src="/asset/c.jpeg" draggable="true" ondragstart="drag(event)" id="drag3" width="23" height="23">
-            <img src="/asset/d.jpeg" draggable="true" ondragstart="drag(event)" id="drag4" width="23" height="23">
-            <img src="/asset/e.jpeg" draggable="true" ondragstart="drag(event)" id="drag5" width="23" height="23">
-            <img src="/asset/f.jpeg" draggable="true" ondragstart="drag(event)" id="drag6" width="23" height="23">
-            <img src="/asset/g.jpeg" draggable="true" ondragstart="drag(event)" id="drag7" width="23" height="23">
-            <img src="/asset/h.jpeg" draggable="true" ondragstart="drag(event)" id="drag8" width="23" height="23"> 
-            <button id="submit" style="float: right">Check Words</button>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <!-- JS call -->
@@ -80,7 +63,7 @@
   <!-- <script src="rxjs.min.js"></script> -->
   <script src="lib/js/letters.js"></script>
   <script src="lib/js/board-generator.js"></script>
-  <script src="lib/js/game-control.js"></script>
   <script src="lib/js/drag-drop.js"></script>
+  <script src="lib/js/game-control.js"></script>
 </body>
 </html>
